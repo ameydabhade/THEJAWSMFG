@@ -16,7 +16,7 @@ const Header = () => {
             
             <a href="/solutions" className="px-2 rounded-sm font-medium text-black hover:text-[#2D2CB8] transition-colors duration-300">Solutions</a>
             <a href="/products" className="px-2 rounded-sm font-medium text-black hover:text-[#2D2CB8] transition-colors duration-300">Products</a>
-            <a href="/contact-us" className="px-2 rounded-sm font-medium text-black hover:text-[#2D2CB8] transition-colors duration-300">Contact Us</a>
+
             <a href="/contact-us" className="border px-4 py-2 border-[#1842B6] bg-[#1842B6] hover:bg-[#153A99] rounded-md text-white font-medium transition-all duration-300">Get in Touch</a>
           </div>
 
