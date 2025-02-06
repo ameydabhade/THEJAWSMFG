@@ -39,7 +39,7 @@ const ProductCard = ({ product }) => (
 const ClientLogos = ({ logos }) => (
   <div className="relative overflow-hidden py-4">
     <div className="marquee">
-      <div className="marquee-row flex items-center justify-around space-x-8">
+      <div className="marquee-row flex items-center justify-around">
         {logos.map((img, index) => (
           <div key={index} className="marquee-item">
             <img
@@ -71,8 +71,8 @@ const Home = () => (
             </button>
           </a>
         </div>
-        <div className="md:w-1/2 w-full flex justify-center">
-          <img src="/homepage 1.jpg" alt="Jaws Manufacturing" className="max-w-[600px] rounded-lg shadow-lg object-cover" />
+        <div className="md:w-1/2 w-full flex justify-center ">
+          <img src="/homepage 1.jpg" alt="Jaws Manufacturing" className="lg:max-w-[550px] md:max-w-[400px] rounded-lg shadow-lg object-cover" />
         </div>
       </div>
     </div>

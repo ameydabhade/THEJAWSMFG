@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Solutions = () => {
   return (
     <section className="bg-gradient-to-r from-[#EDF2F4] to-[#E0E7FF] py-8 md:py-16">
@@ -56,7 +58,7 @@ const Solutions = () => {
           ].map((service, index) => (
             <div key={index} className="p-6 rounded-lg flex flex-col bg-white h-full shadow-md">
               <div className="flex items-center mb-4">
-                <img src={`${service.img}`} alt="" className="w-10 h-10 mr-3" />
+                {/* <img src={`${service.img}`} alt="" className="w-10 h-10 mr-3" /> */}
                 <h3 className="text-xl md:text-2xl font-semibold">{service.title}</h3>
               </div>
               <p className="text-gray-600 flex-grow mb-4 text-sm md:text-base">{service.desc}</p>
@@ -64,7 +66,7 @@ const Solutions = () => {
           ))}
         </div>
         <div className="text-right mt-6">
-          <button className="bg-[#1842B6] text-white py-2 px-4 rounded">View More</button>
+          <Link to="/contact-us" className="bg-[#1842B6] text-white py-2 px-4 rounded">Contact Us</Link>
         </div>
       </div>
     </section>

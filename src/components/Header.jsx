@@ -17,7 +17,7 @@ const Header = () => {
             <a href="/solutions" className="px-2 rounded-sm font-medium text-black hover:text-[#2D2CB8] transition-colors duration-300">Solutions</a>
             <a href="/products" className="px-2 rounded-sm font-medium text-black hover:text-[#2D2CB8] transition-colors duration-300">Products</a>
 
-            <a href="/contact-us" className="border px-4 py-2 border-[#1842B6] bg-[#1842B6] hover:bg-[#153A99] rounded-md text-white font-medium transition-all duration-300">Get in Touch</a>
+            <a href="/contact-us" className="border px-4 py-2 border-[#1842B6] hover:scale-105 rounded-md text-white bg-[#1842B6]  font-medium transition-all duration-300">Get in Touch</a>
           </div>
 
           <button onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} className="md:hidden text-black focus:outline-none">
@@ -33,7 +33,7 @@ const Header = () => {
             <a href="/services" className="block px-4 py-2 text-black hover:bg-gray-200 transition duration-300">Services</a>
             <a href="/solutions" className="block px-4 py-2 text-black hover:bg-gray-200 transition duration-300">Solutions</a>
             <a href="/clients" className="block px-4 py-2 text-black hover:bg-gray-200 transition duration-300">Clients</a>
-            <a href="/contact-us" className="block px-4 py-2 text-black hover:bg-gray-200 transition duration-300">Contact Us</a>
+            <a href="/contact-us" className="block px-4 py-2 text-white hover:bg-gray-200 transition duration-300">Contact Us</a>
             <a href="/contact-us" className="block mx-4 my-2 px-4 py-2 border border-[#1842B6] bg-[#1842B6] text-white text-center rounded-md hover:bg-[#153A99] transition-all duration-300">Get in Touch</a>
           </div>
         )}
