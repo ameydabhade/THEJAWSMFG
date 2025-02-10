@@ -1,27 +1,28 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useProducts } from "./ProductContext"; // Import the custom hook to get products from context
-import { useEffect } from "react";
 
 const ProductCard = ({ product }) => (
-  <div className="transform transition-transform duration-300 ease-in-out hover:scale-105 bg-white shadow-md rounded-lg overflow-hidden hover:cursor-pointer">
-     <Link to={`/product/${product.id}`}>
-    <div className="p-4 ">
-      <img
-        src={product.img}
-        alt={product.name}
-        loading="lazy"
-        className="w-full h-64 object-cover rounded-lg"
-      />
-      <h2 className="text-xl font-semibold text-[#1842B6] mt-4">{product.name}</h2>
-      <p className="text-gray-600 mt-2">{product.description}</p>
+  <div className="transform transition-transform duration-300 ease-in-out hover:scale-105 bg-white shadow-md rounded-lg overflow-hidden hover:cursor-pointer flex flex-col h-full">
+    <Link to={`/product/${product.id}`} className="flex-grow">
+      <div className="p-4 flex flex-col h-full">
+        <img
+          src={product.img}
+          alt={product.name}
+          loading="lazy"
+          className="w-full h-64 object-cover rounded-lg"
+        />
+        <h2 className="text-xl font-semibold text-[#1842B6] mt-4">{product.name}</h2>
+        <p className="text-gray-600 mt-2 flex-grow">{product.description}</p>
+      </div>
+    </Link>
+    <div className="p-4 mt-auto">
       <Link to={`/product/${product.id}`}>
-        <button className="mt-4 px-4 py-2  bg-[#1842B6] text-white rounded-md hover:bg-[#0f3196] transition duration-200">
+        <button className="w-full px-4 py-2 bg-[#1842B6] text-white rounded-md hover:bg-[#0f3196] transition duration-200">
           View Details
         </button>
       </Link>
     </div>
-    </Link>
   </div>
 );
 

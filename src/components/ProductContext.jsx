@@ -64,7 +64,7 @@ export const ProductProvider = ({ children }) => {
     },
     {
       "id": 9,
-      "name": "Special Chucks, Jaws and CNC Jaws",
+      "name": "Special Chucks and CNC Jaws",
       "description": "Specialized chucks and CNC-compatible jaws for custom machining needs.",
       "img": "/powerChuck.jpg",
       "detailedDescription": "Engineered for specialized machining applications, these chucks and jaws offer enhanced precision and customization for CNC and manual lathe operations. Designed to meet unique workholding requirements."
