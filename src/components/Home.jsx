@@ -3,7 +3,7 @@ import { useProducts } from "./ProductContext";
 import { Link } from "react-router-dom";
 
 const ProductCard = ({ product }) => (
-  <div className="transform transition duration-300 ease-in-out hover:scale-105 bg-white p-4 shadow-lg rounded-lg hover:shadow-2xl">
+  <div className="transform transition duration-300 ease-in-out hover:scale-105 bg-white p-4 shadow-lg rounded-lg hover:shadow-2xl hover:cursor-pointer">
     <div className="w-full flex justify-center">
       <img
         src={product.img}
