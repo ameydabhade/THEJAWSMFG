@@ -5,7 +5,7 @@ import { useProducts } from "./ProductContext"; // Import the custom hook to get
 const ProductCard = ({ product }) => (
   <div className="transform transition-transform duration-300 ease-in-out hover:scale-105 bg-white shadow-md rounded-lg overflow-hidden hover:cursor-pointer">
      <Link to={`/product/${product.id}`}>
-    <div className="p-4">
+    <div className="p-4 ">
       <img
         src={product.img}
         alt={product.name}
@@ -15,7 +15,7 @@ const ProductCard = ({ product }) => (
       <h2 className="text-xl font-semibold text-[#1842B6] mt-4">{product.name}</h2>
       <p className="text-gray-600 mt-2">{product.description}</p>
       <Link to={`/product/${product.id}`}>
-        <button className="mt-4 px-4 py-2 bg-[#1842B6] text-white rounded-md hover:bg-[#0f3196] transition duration-200">
+        <button className="mt-4 px-4 py-2  bg-[#1842B6] text-white rounded-md hover:bg-[#0f3196] transition duration-200">
           View Details
         </button>
       </Link>

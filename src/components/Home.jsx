@@ -1,5 +1,6 @@
 import React from "react";
 import { useProducts } from "./ProductContext";
+import { Link } from "react-router-dom"; // Import Link for navigation
 
 // Product Card Component
 const ProductCard = ({ product }) => (
@@ -45,13 +46,11 @@ const ClientLogos = () => {
     "Shanthi Gears.svg",
     "sulzer.svg",
     "tata-motors.svg",
-    
   ];
 
   return (
     <div className="relative overflow-hidden py-4">
       <div className=" flex items-center">
-        
         {logoFiles.map((img, index) => (
           <div key={index} className="marquee-item">
             <img
@@ -68,6 +67,9 @@ const ClientLogos = () => {
 
 const Home = () => {
   const { products } = useProducts();
+
+  // Fetch the first 4 products
+  const firstFourProducts = products.slice(0, 4);
 
   return (
     <>
@@ -108,21 +110,38 @@ const Home = () => {
           </a>
         </div>
       </section>
-      <section className="pt-6 pb-6 px-4 mt-2 bg-black">
-        <div className="max-w-7xl mx-auto sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 text-center text-white">
-            <div><h2 className="text-4xl font-bold">20+</h2><p>Satisfied Customers</p></div>
-            <div><h2 className="text-4xl font-bold">7+</h2><p>Years Experience</p></div>
-            <div><h2 className="text-4xl font-bold">2+</h2><p>Branch Offices</p></div>
-            <div><h2 className="text-4xl font-bold">25+</h2><p>Projects Completed</p></div>
-          </div>
+
+      {/* Products Section */}
+      <section className="my-4 px-4">
+        <h2 className="text-3xl font-bold text-center mb-8 mt-10">Our Products</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          {firstFourProducts.map((product) => (
+            <ProductCard key={product.id} product={product} />
+          ))}
+        </div>
+        <div className="text-right mt-6">
+          <Link to="/products">
+            <button className="px-8 py-3 bg-[#1842B6] text-white rounded-lg mr-10 hover:bg-blue-700 transition-all duration-300">
+              View More
+            </button>
+          </Link>
         </div>
       </section>
 
       {/* Clients Section */}
-      <section className="my-4 px-4 text-center">
+      <section className="my-4 px-4 text-center mt-10">
         <h2 className="text-3xl font-bold mb-8">Our Clients</h2>
         <ClientLogos />
+      </section>
+      <section className="pt-6 pb-6 px-4 mt-2 bg-black mt-14">
+        <div className="max-w-7xl mx-auto sm:px-6 lg:px-8">
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 text-center text-white">
+            <div><h2 className="text-4xl font-bold">1978</h2><p>Establisment of Jaws Mfg. </p></div>
+            <div><h2 className="text-4xl font-bold">46+</h2><p>Years Experience</p></div>
+            <div><h2 className="text-4xl font-bold">23+</h2><p>Clients Satisfied</p></div>
+            <div><h2 className="text-4xl font-bold">500+</h2><p>Projects Completed</p></div>
+          </div>
+        </div>
       </section>
     </>
   );

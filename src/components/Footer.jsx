@@ -1,15 +1,79 @@
 import React from "react";
 
+const socialLinks = [
+  {
+    href: "https://www.facebook.com/",
+    icon: (
+      <svg
+        stroke="currentColor"
+        fill="none"
+        strokeWidth="2"
+        viewBox="0 0 24 24"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        className="hover:text-[#1842B6] transition duration-300"
+        height="1em"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+      </svg>
+    ),
+    label: "Facebook",
+  },
+  {
+    href: "https://www.instagram.com/",
+    icon: (
+      <svg
+        stroke="currentColor"
+        fill="currentColor"
+        strokeWidth="0"
+        viewBox="0 0 448 512"
+        className="hover:text-[#1842B6] transition duration-300"
+        height="1em"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path>
+      </svg>
+    ),
+    label: "Instagram",
+  },
+  {
+    href: "https://www.linkedin.com/company//posts/?feedView=all",
+    icon: (
+      <svg
+        stroke="currentColor"
+        fill="none"
+        strokeWidth="2"
+        viewBox="0 0 24 24"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        className="hover:text-[#1842B6] transition duration-300"
+        height="1em"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+        <rect width="4" height="12" x="2" y="9"></rect>
+        <circle cx="4" cy="4" r="2"></circle>
+      </svg>
+    ),
+    label: "LinkedIn",
+  },
+];
+
 const Footer = () => {
   return (
     <footer className="bg-gradient-to-r from-[#EDF2F4] to-[#E0E7FF] py-10 mt-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          {/* Company Info */}
           <div>
             <div className="mb-4 flex items-center space-x-2">
               <img
                 src="https://www.jawsindia.com/images/logo.png"
-                alt=" Logo"
+                alt="Logo"
                 className="h-10"
               />
               <span className="text-xl font-bold text-[#1842B6]"></span>
@@ -20,68 +84,21 @@ const Footer = () => {
             </p>
             <p className="text-gray-600 mb-4">Follow Us On:</p>
             <div className="flex space-x-4">
-              <a
-                href="https://www.facebook.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg
-                  stroke="currentColor"
-                  fill="none"
-                  strokeWidth="2"
-                  viewBox="0 0 24 24"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className="hover:text-[#1842B6] transition duration-300"
-                  height="1em"
-                  width="1em"
-                  xmlns="http://www.w3.org/2000/svg"
+              {socialLinks.map((link) => (
+                <a
+                  href={link.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={link.label}
+                  key={link.label}
                 >
-                  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
-                </svg>
-              </a>
-              <a
-                href="https://www.instagram.com//"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg
-                  stroke="currentColor"
-                  fill="currentColor"
-                  strokeWidth="0"
-                  viewBox="0 0 448 512"
-                  className="hover:text-[#1842B6] transition duration-300"
-                  height="1em"
-                  width="1em"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path>
-                </svg>
-              </a>
-              <a
-                href="https://www.linkedin.com/company//posts/?feedView=all"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg
-                  stroke="currentColor"
-                  fill="none"
-                  strokeWidth="2"
-                  viewBox="0 0 24 24"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className="hover:text-[#1842B6] transition duration-300"
-                  height="1em"
-                  width="1em"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-                  <rect width="4" height="12" x="2" y="9"></rect>
-                  <circle cx="4" cy="4" r="2"></circle>
-                </svg>
-              </a>
+                  {link.icon}
+                </a>
+              ))}
             </div>
           </div>
+
+          {/* Company Links */}
           <div>
             <h3 className="text-gray-900 font-semibold mb-4">Company</h3>
             <ul className="space-y-2">
@@ -90,10 +107,6 @@ const Footer = () => {
                   Home
                 </a>
               </li>
-              <li>
-
-              </li>
-          
               <li>
                 <a className="text-gray-600 hover:text-black" href="/">
                   Solutions
@@ -104,10 +117,10 @@ const Footer = () => {
                   Products
                 </a>
               </li>
-
             </ul>
-        
           </div>
+
+          {/* Contact Us */}
           <div>
             <h3 className="text-gray-900 font-semibold mb-4">Contact Us</h3>
             <p className="flex items-center text-gray-600 mb-4">
@@ -124,11 +137,7 @@ const Footer = () => {
                 <path fill="none" d="M0 0h24v24H0z"></path>
                 <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"></path>
               </svg>
-              The Jaws Mfg.Co.
-       Plot no. 103,
-       Ramtekdi industrial Estate,
-       Hadapsar,
-       Pune - 411013, India 
+              The Jaws Mfg.Co., Plot no. 103, Ramtekdi industrial Estate, Hadapsar, Pune - 411013, India
             </p>
             <p className="flex items-center text-gray-600 mb-4">
               <svg
@@ -162,15 +171,16 @@ const Footer = () => {
             </p>
           </div>
         </div>
+
+        {/* Footer Bottom */}
         <div className="mt-10 border-t-2 border-gray-500 pt-6 text-black flex flex-col sm:flex-row justify-between">
           <p>
             Copyright © 2024{" "}
             <a className="text-[#1842B6]" href="/">
-               The Jaws Manufacturing Company
+              The Jaws Manufacturing Company
             </a>
             . All Rights Reserved.
           </p>
-
         </div>
       </div>
     </footer>
