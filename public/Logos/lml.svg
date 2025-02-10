@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg2"
+   width="800"
+   height="205.33333"
+   viewBox="0 0 800 205.33333"
+   sodipodi:docname="lml.eps"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs6" />
+  <sodipodi:namedview
+     id="namedview4"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1" />
+  <g
+     id="g8"
+     inkscape:groupmode="layer"
+     inkscape:label="ink_ext_XXXXXX"
+     transform="matrix(1.3333333,0,0,-1.3333333,0,205.33333)">
+    <g
+       id="g10"
+       transform="scale(0.1)">
+      <path
+         d="M 1.35156,1537.18 H 5995.93 V 0.171875 H 1.35156 V 1537.18"
+         style="fill:#191d77;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         id="path12" />
+      <path
+         d="M 1.35156,1290.82 H 673.895 V 908.801 H 1.35156 v 382.019"
+         style="fill:#ed1c24;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         id="path14" />
+      <path
+         d="M 1.35156,627.59 H 673.895 V 245.566 H 1.35156 V 627.59"
+         style="fill:#bdbcbc;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         id="path16" />
+      <path
+         d="m 5323.39,1290.82 h 672.54 V 908.801 h -672.54 v 382.019"
+         style="fill:#ed1c24;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         id="path18" />
+      <path
+         d="m 5323.39,627.59 h 672.54 V 245.566 H 5323.39 V 627.59"
+         style="fill:#bdbcbc;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         id="path20" />
+      <path
+         d="M 1604.78,1246.75 H 979.938 V 998.488 h 92.052 V 538.23 H 982.727 V 289.965 H 2012.42 V 696.023 H 1725.14 V 538.23 h -212.41 v 460.258 h 92.05 v 248.262"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         id="path22" />
+      <path
+         d="M 4598.08,1246.75 H 3973.23 V 998.488 h 92.06 V 538.23 h -89.27 V 289.965 H 5005.71 V 696.023 H 4718.44 V 538.23 h -212.42 v 460.258 h 92.06 v 248.262"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         id="path24" />
+      <path
+         d="m 2218.09,998.488 h 66.95 V 538.23 h -65.55 V 289.965 h 417.03 V 538.23 h -62.77 v 446.754 l 270.59,-695.019 h 172.94 l 274.76,695.019 V 538.23 h -69.73 V 289.965 h 549.52 V 538.23 h -69.73 v 460.258 h 58.58 V 1246.75 H 3121.89 L 2996.36,908.273 2831.78,1246.75 H 2218.09 V 998.488"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         id="path26" />
+    </g>
+  </g>
+</svg>

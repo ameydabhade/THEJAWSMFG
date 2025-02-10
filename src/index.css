@@ -9,7 +9,7 @@
 
 .marquee {
   display: flex;
-  animation: marquee-scroll 20s linear infinite;
+  animation: marquee-scroll 50s linear infinite;
 }
 
 .marquee-row {
@@ -33,6 +33,6 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(100%);
   }
 }
