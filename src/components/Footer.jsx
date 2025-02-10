@@ -1,8 +1,9 @@
 import React from "react";
+import { useEffect } from "react";
 
 const socialLinks = [
   {
-    href: "https://www.facebook.com/",
+    href: "https://www.facebook.com/p/The-Jaws-Manufacturing-Company-100063787793572/",
     icon: (
       <svg
         stroke="currentColor"
@@ -40,7 +41,7 @@ const socialLinks = [
     label: "Instagram",
   },
   {
-    href: "https://www.linkedin.com/company//posts/?feedView=all",
+    href: "https://www.linkedin.com/company/the-jaws-mfg-co/",
     icon: (
       <svg
         stroke="currentColor"
@@ -64,6 +65,9 @@ const socialLinks = [
 ];
 
 const Footer = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <footer className="bg-gradient-to-r from-[#EDF2F4] to-[#E0E7FF] py-10 mt-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

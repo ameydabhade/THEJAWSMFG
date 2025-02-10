@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useProducts } from "./ProductContext"; // Import the custom hook to get products from context
+import { useEffect } from "react";
 
 const ProductCard = ({ product }) => (
   <div className="transform transition-transform duration-300 ease-in-out hover:scale-105 bg-white shadow-md rounded-lg overflow-hidden hover:cursor-pointer">
@@ -26,6 +27,9 @@ const ProductCard = ({ product }) => (
 
 const ProductList = () => {
   const { products } = useProducts(); // Fetch products from ProductContext
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <section className="mx-auto px-4 sm:px-6 lg:px-8 py-12 pt-16 mt-10">

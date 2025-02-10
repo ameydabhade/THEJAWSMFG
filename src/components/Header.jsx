@@ -1,8 +1,12 @@
 import React, { useState } from "react";
+import { useEffect } from "react";
 import { Link } from "react-router-dom"; // Import Link from react-router-dom
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <nav className="fixed top-0 w-full bg-gradient-to-r from-[#EDF2F4] to-[#E0E7FF] shadow-sm z-50">

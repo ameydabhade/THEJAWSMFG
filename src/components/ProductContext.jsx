@@ -53,35 +53,35 @@ export const ProductProvider = ({ children }) => {
       "name": "Base Jaws",
       "description": "Reliable base jaws for secure fitting in power chucks.",
       "img": "/softJaws.jpg",
-      "detailedDescription": "none"
+      "detailedDescription": "Precision-manufactured base jaws designed for seamless compatibility with power chucks, ensuring a stable and secure grip. Crafted from durable materials, these jaws provide a reliable foundation for workholding applications"
     },
     {
       "id": 8,
       "name": "Chuck Spares",
       "description": "Essential spare parts for maintaining chuck performance and longevity.",
       "img": "/softJaws.jpg",
-      "detailedDescription": "none"
+      "detailedDescription": "A comprehensive range of spare parts essential for maintaining and extending the lifespan of chucks. These spares ensure smooth operation and optimal performance in machining applications."
     },
     {
       "id": 9,
       "name": "Special Chucks, Jaws and CNC Jaws",
       "description": "Specialized chucks and CNC-compatible jaws for custom machining needs.",
       "img": "/powerChuck.jpg",
-      "detailedDescription": "none"
+      "detailedDescription": "Engineered for specialized machining applications, these chucks and jaws offer enhanced precision and customization for CNC and manual lathe operations. Designed to meet unique workholding requirements."
     },
     {
       "id": 10,
       "name": "Hydraulic Rotary Cylinder",
       "description": "Hydraulic rotary cylinders for automated clamping in industrial processes.",
       "img": "/hydraulicRotaryCylinder.jpg",
-      "detailedDescription": "none"
+      "detailedDescription": "High-performance hydraulic rotary cylinders designed for automated clamping in machining operations. Ensures powerful and precise workholding with smooth hydraulic actuation."
     },
     {
       "id": 11,
       "name": "Pneumatic Rotary Cylinder",
       "description": "Pneumatic rotary cylinders designed for efficient air-powered clamping.",
       "img": "/pneumaticRotaryCylinder.jpg",
-      "detailedDescription": "none"
+      "detailedDescription": "Efficient and reliable pneumatic rotary cylinders for air-powered clamping applications. Designed to provide consistent pressure and high-speed operation in industrial machining processes."
     },
     {
       "id": 12,
