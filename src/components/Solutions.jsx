@@ -66,7 +66,7 @@ const Solutions = () => {
           ))}
         </div>
         <div className="text-right mt-6">
-          <Link to="/contact-us" className="bg-[#1842B6] text-white py-2 px-4 rounded">Contact Us</Link>
+          <Link to="/contact-us" className="bg-[#1842B6] text-white py-2 px-4 rounded-lg">Contact Us</Link>
         </div>
       </div>
     </section>

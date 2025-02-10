@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useEffect } from 'react';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -7,6 +8,9 @@ const Contact = () => {
     subject: '',
     message: '',
   });
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   // Handle input changes
   const handleChange = (e) => {

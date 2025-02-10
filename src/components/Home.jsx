@@ -1,6 +1,7 @@
 import React from "react";
 import { useProducts } from "./ProductContext";
 import { Link } from "react-router-dom"; // Import Link for navigation
+import { useEffect } from "react";
 
 // Product Card Component
 const ProductCard = ({ product }) => (
@@ -67,6 +68,9 @@ const ClientLogos = () => {
 
 const Home = () => {
   const { products } = useProducts();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   // Fetch the first 4 products
   const firstFourProducts = products.slice(0, 4);
