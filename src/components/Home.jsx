@@ -3,7 +3,7 @@ import { useProducts } from "./ProductContext";
 import { Link } from "react-router-dom";
 
 const ProductCard = ({ product }) => (
-  <div className="transform transition duration-300 ease-in-out hover:scale-105 bg-white p-4 shadow-lg rounded-lg hover:shadow-2xl hover:cursor-pointer">
+  <div className="transform transition duration-300 ease-in-out hover:scale-105 bg-white p-4 shadow-lg rounded-lg hover:shadow-2xl hover:cursor-pointer flex flex-col h-full">
     <div className="w-full flex justify-center">
       <img
         src={product.img}
@@ -12,10 +12,12 @@ const ProductCard = ({ product }) => (
       />
     </div>
     <h3 className="text-xl font-semibold text-[#1842B6]">{product.name}</h3>
-    <p className="text-gray-600 mt-2">{product.description}</p>
-    <button className="mt-4 px-4 py-2 bg-[#1842B6] text-white rounded-md hover:bg-[#0f3196] transition duration-200">
-      View Details
-    </button>
+    <p className="text-gray-600 mt-2 flex-grow">{product.description}</p>
+    <div className="mt-auto">
+      <button className="w-full px-4 py-2 bg-[#1842B6] text-white rounded-md hover:bg-[#0f3196] transition duration-200">
+        View Details
+      </button>
+    </div>
   </div>
 );
 
