@@ -33,7 +33,7 @@ const ProductDetails = () => {
       {/* Back to Products Button */}
       <Link
         to="/products"
-        className="inline-block text-[#1842B6] hover:text-white border-2 border-[#1842B6] rounded-full px-4 py-2 
+        className="inline-block text-[#1842B6] hover:text-white border-2 border-[#1842B6] rounded-full px-4 py-1 
         hover:bg-[#1842B6] transition-all duration-300"
       >
         Back to Products
