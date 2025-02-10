@@ -104,11 +104,7 @@ const Footer = () => {
                   Products
                 </a>
               </li>
-              <li>
-                <a className="text-gray-600 hover:text-black" href="/contact-us">
-                  Contact Us
-                </a>
-              </li>
+
             </ul>
         
           </div>
@@ -121,14 +117,18 @@ const Footer = () => {
                 strokeWidth="0"
                 viewBox="0 0 24 24"
                 className="mr-2"
-                height="1em"
-                width="1em"
+                height="4em"
+                width="4em"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path fill="none" d="M0 0h24v24H0z"></path>
                 <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"></path>
               </svg>
-              Hadapsar Pune Maharashtra 
+              The Jaws Mfg.Co.
+       Plot no. 103,
+       Ramtekdi industrial Estate,
+       Hadapsar,
+       Pune - 411013, India 
             </p>
             <p className="flex items-center text-gray-600 mb-4">
               <svg
@@ -143,7 +143,7 @@ const Footer = () => {
               >
                 <path d="M497.39 361.8l-112-48a24 24 0 0 0-28 6.9l-49.6 60.6A370.66 370.66 0 0 1 130.6 204.11l60.6-49.6a23.94 23.94 0 0 0 6.9-28l-48-112A24.16 24.16 0 0 0 122.6.61l-104 24A24 24 0 0 0 0 48c0 256.5 207.9 464 464 464a24 24 0 0 0 23.4-18.6l24-104a24.29 24.29 0 0 0-14.01-27.6z"></path>
               </svg>
-              +91 999999999
+              +91 9158866112 | +91 9158866113
             </p>
             <p className="flex items-center text-gray-600 mb-4">
               <svg
@@ -158,7 +158,7 @@ const Footer = () => {
               >
                 <path d="M928 160H96c-17.7 0-32 14.3-32 32v640c0 17.7 14.3 32 32 32h832c17.7 0 32-14.3 32-32V192c0-17.7-14.3-32-32-32zm-40 110.8V792H136V270.8l-27.6-21.5 39.3-50.5 42.8 33.3h643.1l42.8-33.3 39.3 50.5-27.7 21.5zM833.6 232L512 482 190.4 232l-42.8-33.3-39.3 50.5 27.6 21.5 341.6 265.6a55.99 55.99 0 0 0 68.7 0L888 270.8l27.6-21.5-39.3-50.5-42.7 33.2z"></path>
               </svg>
-              info@.com
+              jaws@jawsindia.com
             </p>
           </div>
         </div>

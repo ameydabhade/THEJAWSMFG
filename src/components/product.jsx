@@ -3,7 +3,8 @@ import { Link } from "react-router-dom";
 import { useProducts } from "./ProductContext"; // Import the custom hook to get products from context
 
 const ProductCard = ({ product }) => (
-  <div className="transform transition-transform duration-300 ease-in-out hover:scale-105 bg-white shadow-md rounded-lg overflow-hidden">
+  <div className="transform transition-transform duration-300 ease-in-out hover:scale-105 bg-white shadow-md rounded-lg overflow-hidden hover:cursor-pointer">
+     <Link to={`/product/${product.id}`}>
     <div className="p-4">
       <img
         src={product.img}
@@ -19,6 +20,7 @@ const ProductCard = ({ product }) => (
         </button>
       </Link>
     </div>
+    </Link>
   </div>
 );
 

@@ -28,14 +28,12 @@ const Header = () => {
         </div>
 
         {isMobileMenuOpen && (
-          <div className="md:hidden bg-white shadow-md py-4">
+          <div className="md:hidden  shadow-lg transition-all py-4 rounded-lg">
             <a href="/" className="block px-4 py-2 text-black hover:bg-gray-200 transition duration-300">Home</a>
-            <a href="/services" className="block px-4 py-2 text-black hover:bg-gray-200 transition duration-300">Services</a>
             <a href="/solutions" className="block px-4 py-2 text-black hover:bg-gray-200 transition duration-300">Solutions</a>
-            <a href="/clients" className="block px-4 py-2 text-black hover:bg-gray-200 transition duration-300">Clients</a>
-            <a href="/contact-us" className="block px-4 py-2 text-white hover:bg-gray-200 transition duration-300">Contact Us</a>
-            <a href="/contact-us" className="block mx-4 my-2 px-4 py-2 border border-[#1842B6] bg-[#1842B6] text-white text-center rounded-md hover:bg-[#153A99] transition-all duration-300">Get in Touch</a>
-          </div>
+    
+            <a href="/products" className="block px-4 py-2 text-white hover:bg-gray-200 transition duration-300">Products</a>
+              </div>
         )}
       </div>
     </nav>

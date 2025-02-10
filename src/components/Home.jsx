@@ -108,6 +108,16 @@ const Home = () => {
           </a>
         </div>
       </section>
+      <section className="pt-6 pb-6 px-4 mt-2 bg-black">
+        <div className="max-w-7xl mx-auto sm:px-6 lg:px-8">
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 text-center text-white">
+            <div><h2 className="text-4xl font-bold">20+</h2><p>Satisfied Customers</p></div>
+            <div><h2 className="text-4xl font-bold">7+</h2><p>Years Experience</p></div>
+            <div><h2 className="text-4xl font-bold">2+</h2><p>Branch Offices</p></div>
+            <div><h2 className="text-4xl font-bold">25+</h2><p>Projects Completed</p></div>
+          </div>
+        </div>
+      </section>
 
       {/* Clients Section */}
       <section className="my-4 px-4 text-center">
