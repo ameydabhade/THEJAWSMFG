@@ -18,7 +18,7 @@ const ProductCard = ({ product }) => (
     </Link>
     <div className="p-4 mt-auto">
       <Link to={`/product/${product.id}`}>
-        <button className="w-full px-4 py-2 bg-[#1842B6] text-white rounded-md hover:bg-[#0f3196] transition duration-200">
+        <button className="w-full px-4 py-2 bg-[#1842B6] text-white rounded-md hover:bg-[#0f3196] cursor-pointer transition duration-200">
           View Details
         </button>
       </Link>
