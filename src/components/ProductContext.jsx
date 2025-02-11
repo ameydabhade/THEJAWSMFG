@@ -87,7 +87,7 @@ export const ProductProvider = ({ children }) => {
       "id": 12,
       "name": "Jaws Boring Rings",
       "description": "Precision boring rings to assist in accurate jaw machining.",
-      "img": "/boringRing.jpg",
+      "img": "/boringRing.png",
       "detailedDescription": "These are used to bore soft jaws on manual lathes and CNC machines. This replaces the current method people use for boring soft jaws using setup pieces they find on their shop floor. Jaw Boring Rings save time looking for these pieces and apply pressure equally to all jaws. They are quick to install and no tools are required. Jaws Boring Rings help obtain high accuracy and performance, increasing the life of jaws."
     } 
     // Add other products here as needed...
