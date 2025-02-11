@@ -29,11 +29,12 @@ export const ProductProvider = ({ children }) => {
     },
     {
       "id": 4,
-      "name": "Jaws Eccentric Compensating Chuck",
-      "description": "Chucks designed to compensate for eccentric workpieces for optimal grip.",
-      "img": "/eccentricCompensatingChuck.jpg",
-      "detailedDescription": "JAWS Eccentric Compensating Chucks have been designed to hold workpieces in between centers with eccentricity or irregularity. The compensating chuck provides a total solution to any chucking problem requiring jaw movement to match the eccentricity or irregularity of the workpiece. These chucks are actuated either by Pneumatic Cylinders or Hydraulic Cylinders and are ideal for irregular-shaped workpieces. JPCE is offered with centering inserts and spring-loaded or solid centers."
+      "name": "Hard Jaws",
+      "description": "Robust hard jaws for heavy-duty and secure workholding applications.",
+      "img": "/hardJaws.jpg",
+      "detailedDescription": "Hard Jaws share certain characteristics of soft jaws. They are made of case-hardened steel - EN353 and hardened up to 50-55 HRC. They are usually used for first-operation roughing, where gripping is a more important criterion than concentricity. The ground gripping surface of the jaw provides a secure true grip."
     },
+
     {
       "id": 5,
       "name": "Soft Jaws",
@@ -43,11 +44,12 @@ export const ProductProvider = ({ children }) => {
     },
     {
       "id": 6,
-      "name": "Hard Jaws",
-      "description": "Robust hard jaws for heavy-duty and secure workholding applications.",
-      "img": "/hardJaws.jpg",
-      "detailedDescription": "Hard Jaws share certain characteristics of soft jaws. They are made of case-hardened steel - EN353 and hardened up to 50-55 HRC. They are usually used for first-operation roughing, where gripping is a more important criterion than concentricity. The ground gripping surface of the jaw provides a secure true grip."
+      "name": "Jaws Eccentric Compensating Chuck",
+      "description": "Chucks designed to compensate for eccentric workpieces for optimal grip.",
+      "img": "/eccentricCompensatingChuck.jpg",
+      "detailedDescription": "JAWS Eccentric Compensating Chucks have been designed to hold workpieces in between centers with eccentricity or irregularity. The compensating chuck provides a total solution to any chucking problem requiring jaw movement to match the eccentricity or irregularity of the workpiece. These chucks are actuated either by Pneumatic Cylinders or Hydraulic Cylinders and are ideal for irregular-shaped workpieces. JPCE is offered with centering inserts and spring-loaded or solid centers."
     },
+
     {
       "id": 7,
       "name": "Base Jaws",
