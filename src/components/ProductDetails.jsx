@@ -40,23 +40,25 @@ const ProductDetails = () => {
       </Link>
 
       {/* Product Display Section */}
- 
-      <div className="max-w-6xl mx-auto p-4 flex flex-col md:flex-row items-center justify-between mt-8 gap-6">
-      <div className="w-full md:w-1/3 h-64 "> 
-        <img
-          src={product.img}
-          alt={product.name}
-          className=" rounded-lg shadow-lg"
-        />
-</div>
+      <div className="max-w-6xl mx-auto p-4 flex flex-col md:flex-row items-start justify-between mt-8 gap-6">
+        {/* Image Div */}
+        <div className="w-full md:w-1/3 h-64 ">
+          <img
+            src={product.img}
+            alt={product.name}
+            className="rounded-lg shadow-lg"
+          />
+        </div>
+
+        {/* Text and Buttons Div */}
         <div className="w-full md:w-2/3">
           <h2 className="text-3xl font-semibold text-[#1842B6] mt-4">
             {product.name}
           </h2>
           <p className="text-gray-600 mt-2">{product.description}</p>
-          
           <p className="text-gray-700 mt-4">{product.detailedDescription}</p>
-          
+
+          {/* Call and WhatsApp Buttons */}
           <div className="mt-6 flex flex-wrap gap-4">
             <a href="tel:9158866113">
               <button className="flex items-center gap-2 px-6 py-3 bg-[#1842B6] text-white rounded-full hover:bg-blue-700 transition-all duration-300">
@@ -70,6 +72,7 @@ const ProductDetails = () => {
               </button>
             </a>
           </div>
+
           {/* Features Section */}
           {product.features && (
             <div className="mt-6">
@@ -97,9 +100,6 @@ const ProductDetails = () => {
               </ul>
             </div>
           )}
-
-          {/* Call and WhatsApp Buttons */}
-
         </div>
       </div>
     </main>
