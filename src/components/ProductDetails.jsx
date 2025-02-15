@@ -60,7 +60,7 @@ const ProductDetails = () => {
 
           {/* Call and WhatsApp Buttons */}
           <div className="mt-6 flex flex-wrap gap-4">
-            <a href="tel:9158866113">
+            <a href="tel:+919158866113">
               <button className="flex items-center gap-2 px-6 py-3 bg-[#1842B6] text-white rounded-full hover:bg-blue-700 transition-all duration-300">
                 <Phone size={20} /> Call Now
               </button>
