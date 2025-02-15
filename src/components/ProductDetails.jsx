@@ -42,7 +42,7 @@ const ProductDetails = () => {
       {/* Product Display Section */}
       <div className="max-w-6xl mx-auto p-4 flex flex-col md:flex-row items-start justify-between mt-8 gap-6">
         {/* Image Div */}
-        <div className="w-full md:w-1/3 h-64 ">
+        <div className="w-full md:w-1/3 h-64 mt-8 ">
           <img
             src={product.img}
             alt={product.name}

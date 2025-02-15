@@ -13,8 +13,8 @@ const ProductCard = ({ product }) => (
         />
       </div>
       <h3 className="text-xl font-semibold text-[#1842B6]">{product.name}</h3>
-      <p className="text-gray-600 mt-2  flex-grow">{product.description}</p>
-      <div className="mt-2">
+      <p className="text-gray-600 mt-2 mb-2 flex-grow">{product.description}</p>
+      <div className="mt-auto">
         <button className="w-full px-4 py-2 bg-[#1842B6] text-white rounded-md hover:bg-[#0f3196] transition duration-200 cursor-pointer">
           View Details
         </button>
@@ -71,7 +71,12 @@ const Home = () => {
               Precision. Innovation. Excellence.
             </h1>
             <p className="text-lg text-gray-600">
-              At <strong>Jaws Manufacturing Company</strong>, we specialize in high-performance accessories for the machine tool industry. From precision <strong>Power Chucks</strong> and <strong>Hydraulic Cylinders</strong> to custom-engineered <strong>Soft & Hard Jaws</strong>, our solutions enhance productivity and reliability.
+              At <strong>Jaws Manufacturing Company</strong>, we specialize in
+              high-performance accessories for the machine tool industry. From
+              precision <strong>Power Chucks</strong> and{" "}
+              <strong>Hydraulic Cylinders</strong> to custom-engineered{" "}
+              <strong>Soft & Hard Jaws</strong>, our solutions enhance
+              productivity and reliability.
             </p>
             <Link to="/products">
               <button className="px-8 py-3 bg-[#1842B6] cursor-pointer text-white rounded-full hover:bg-blue-700 transition-all duration-300">
@@ -80,7 +85,11 @@ const Home = () => {
             </Link>
           </div>
           <div className="md:w-1/2 w-full flex justify-center">
-            <img src="/homepage 1.jpg" alt="Jaws Manufacturing" className="lg:max-w-[550px] md:max-w-[400px] rounded-lg shadow-lg object-cover" />
+            <img
+              src="/homepage 1.jpg"
+              alt="Jaws Manufacturing"
+              className="lg:max-w-[550px] md:max-w-[400px] rounded-lg shadow-lg object-cover"
+            />
           </div>
         </div>
       </section>
@@ -88,16 +97,29 @@ const Home = () => {
       {/* About Us Section */}
       <section className="py-12 px-6 max-w-7xl mx-auto flex flex-col-reverse md:flex-row items-center space-y-8 md:space-y-0">
         <div className="md:w-1/2 w-full flex justify-center">
-          <img src="/PowerChunk.jpg" alt="About Us" className="w-full max-w-[600px] md:max-w-[600px] rounded-lg shadow-xl object-cover" />
+          <img
+            src="/PowerChunk.jpg"
+            alt="About Us"
+            className="w-full max-w-[600px] md:max-w-[600px] rounded-lg shadow-xl object-cover"
+          />
         </div>
         <div className="md:w-1/2 w-full text-center md:text-left md:pl-10">
-          <h3 className="text-sm font-semibold text-[#1842B6] mb-2">About Us</h3>
-          <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold mb-4">We Never Let Off...</h1>
+          <h3 className="text-sm font-semibold text-[#1842B6] mb-2">
+            About Us
+          </h3>
+          <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold mb-4">
+            We Never Let Off...
+          </h1>
           <p className="text-lg text-gray-600 mb-6">
-            With <strong>46+ years</strong> of expertise, we are a trusted manufacturer of high-quality workholding solutions. Our precision-engineered chucks, jaws, and hydraulic components are designed to elevate your machining efficiency and precision.
+            With <strong>46+ years</strong> of expertise, we are a trusted
+            manufacturer of high-quality workholding solutions. Our
+            precision-engineered chucks, jaws, and hydraulic components are
+            designed to elevate your machining efficiency and precision.
           </p>
           <Link to="/service">
-            <button className="px-6 py-3 bg-[#1842B6] cursor-pointer text-white rounded-full mb-6 md:mb-8">Get in Touch</button>
+            <button className="px-6 py-3 bg-[#1842B6] cursor-pointer text-white rounded-full mb-6 md:mb-8">
+              Get in Touch
+            </button>
           </Link>
         </div>
       </section>
@@ -125,11 +147,11 @@ const Home = () => {
         <div className="relative overflow-hidden py-4">
           <div className="flex animate-marquee whitespace-nowrap items-center">
             {logoFiles.map((img, index) => (
-              <div key={index} className="mx-8 flex-shrink-0">
+              <div key={index} className="mx-6 flex-shrink-0">
                 <img
                   src={`/Logos/${img}`}
                   alt={img.split(".")[0]}
-                  className="w-48 h-24 object-contain" // Adjusted size and alignment
+                  className="w-20 h-20 object-contain" // Adjusted size and alignment
                 />
               </div>
             ))}
