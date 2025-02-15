@@ -129,7 +129,7 @@ export const ProductProvider = ({ children }) => {
       "id": 7,
       "name": "Base Jaws",
       "description": "Reliable base jaws for secure fitting in power chucks.",
-      "img": "/softJaws.jpg",
+      "img": "/Basejaws.jpg",
       "detailedDescription": "Precision-manufactured base jaws designed for seamless compatibility with power chucks, ensuring a stable and secure grip. Crafted from durable materials, these jaws provide a reliable foundation for workholding applications",
       "features": [
         "✅ High-Precision Manufacturing – Ensures a perfect fit and seamless compatibility with power chucks.",
@@ -148,7 +148,7 @@ export const ProductProvider = ({ children }) => {
       "id": 8,
       "name": "Chuck Spares",
       "description": "Essential spare parts for maintaining chuck performance and longevity.",
-      "img": "/softJaws.jpg",
+      "img": "/Chuckspares.jpg",
       "detailedDescription": "A comprehensive range of spare parts essential for maintaining and extending the lifespan of chucks. These spares ensure smooth operation and optimal performance in machining applications.",
       "features": [
         "✅ High-Quality Materials – Manufactured for durability, wear resistance, and long-term use.",

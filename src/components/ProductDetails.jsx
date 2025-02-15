@@ -90,7 +90,7 @@ const ProductDetails = () => {
               </button>
             </a>
 
-            <a href="https://wa.me/9158866113">
+            <a href="https://wa.me/9371002117">
               <button className="flex items-center gap-2 px-6 py-3 bg-black text-white rounded-full hover:bg-green-600 transition-all duration-300">
                 <MessageCircle size={20} /> Chat on WhatsApp
               </button>
