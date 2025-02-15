@@ -83,8 +83,7 @@ const Footer = () => {
               <span className="text-xl font-bold text-[#1842B6]"></span>
             </div>
             <p className="text-gray-600 mb-4">
-              We are providing services and solutions as a Pune-based company
-              in Maharashtra, India.
+            We provide workholding solutions and services.
             </p>
             <p className="text-gray-600 mb-4">Follow Us On:</p>
             <div className="flex space-x-4">

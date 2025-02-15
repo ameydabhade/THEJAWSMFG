@@ -85,7 +85,7 @@ const Home = () => {
     
           <div className="md:w-1/2 w-full text-center md:text-left space-y-6">
             <h2 className="text-sm font-semibold text-white bg-[#1842B6] p-2 rounded-full inline-block px-5">
-              ISO 9001 : 2015 Certified
+            BSI Certified ISO 9001:2015 Company
             </h2>
             <h1 className="text-3xl md:text-5xl font-bold text-black leading-tight">
               Precision. Innovation. Excellence.

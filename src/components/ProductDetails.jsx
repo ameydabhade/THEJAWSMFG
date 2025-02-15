@@ -54,6 +54,34 @@ const ProductDetails = () => {
           <p className="text-gray-600 mt-2">{product.description}</p>
           <p className="text-gray-700 mt-4">{product.detailedDescription}</p>
 
+          {/* Features Section */}
+          {product.features && (
+            <div className="mt-6">
+              <h3 className="text-xl font-semibold text-[#1842B6]">Key Features & Benefits:</h3>
+              <ul className="list-disc list-inside mt-2">
+                {product.features.map((feature, index) => (
+                  <li key={index} className="text-gray-700 mt-2">
+                    {feature}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+
+          {/* Types Section */}
+          {product.types && (
+            <div className="mt-6">
+              <h3 className="text-xl font-semibold text-[#1842B6]">Types & Applications:</h3>
+              <ul className="list-disc list-inside mt-2">
+                {product.types.map((type, index) => (
+                  <li key={index} className="text-gray-700 mt-2">
+                    {type}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+
           {/* Call and WhatsApp Buttons */}
           <div className="mt-6 flex flex-wrap gap-4">
             <a href="tel:9158866113">
