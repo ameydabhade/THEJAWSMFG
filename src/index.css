@@ -7,32 +7,10 @@
   overflow: hidden;
 }
 
-.marquee {
-  display: flex;
-  animation: marquee-scroll 50s linear infinite;
+@keyframes marquee {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
 }
-
-.marquee-row {
-  display: flex;
-  flex-wrap: nowrap;
-}
-
-.marquee-item {
-  display: inline-block;
-  padding: 0 10px;
-}
-
-.company-icon {
-  max-width: 100px;
-  height: auto;
-}
-
-/* Add the animation for scrolling effect */
-@keyframes marquee-scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(100%);
-  }
+.animate-marquee {
+  animation: marquee 20s linear infinite;
 }

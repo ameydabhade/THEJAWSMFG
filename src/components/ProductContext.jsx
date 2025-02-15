@@ -11,7 +11,7 @@ export const ProductProvider = ({ children }) => {
       "name": "Power Chucks",
       "description": "High-Performance Power Chucks for Precision Machining",
       "img": "/powerChuck.jpg",
-      "detailedDescription": "At The Jaws Mfg. Co., we manufacture high-precision Power Chucks engineered for superior clamping force, accuracy, and durability. Designed for CNC turning centers and special-purpose machines, our power chucks ensure exceptional performance in demanding machining environments.",
+      "detailedDescription": " we manufacture high-precision Power Chucks engineered for superior clamping force, accuracy, and durability. Designed for CNC turning centers and special-purpose machines, our power chucks ensure exceptional performance in demanding machining environments.",
       "features": [
         "✅ Superior Clamping Efficiency – Delivers high gripping force with minimal deformation.",
         "✅ Exceptional Accuracy & Repeatability – Ensures precision in every operation.",
@@ -69,7 +69,7 @@ export const ProductProvider = ({ children }) => {
     {
       "id": 4,
       "name": "Hard Jaws",
-      "description": "At The Jaws Mfg. Co., our Hard Jaws are designed for heavy-duty machining and high-strength clamping, ensuring superior grip and durability in demanding applications.",
+      "description": "Hard Jaws are designed for heavy-duty machining and high-strength clamping, ensuring superior grip and durability in demanding applications.",
       "img": "/hardJaws.jpg",
       "detailedDescription": "Hard Jaws share certain characteristics of soft jaws. They are made of case-hardened steel - EN353 and hardened up to 50-55 HRC. They are usually used for first-operation roughing, where gripping is a more important criterion than concentricity. The ground gripping surface of the jaw provides a secure true grip.",
       "features": [
