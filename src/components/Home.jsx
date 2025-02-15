@@ -23,7 +23,15 @@ const ProductCard = ({ product }) => (
   </Link>
 );
 
-const ClientLogos = () => {
+const Home = () => {
+  const { products } = useProducts();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  const firstFourProducts = products.slice(0, 4);
+
+  // Array of client logo file names
   const logoFiles = [
     "cummins-vector-logo.svg",
     "Alfa_Laval.svg",
@@ -51,41 +59,12 @@ const ClientLogos = () => {
   ];
 
   return (
-    <div className="relative overflow-hidden py-4">
-      <div className="flex items-center">
-        {logoFiles.map((img, index) => (
-          <div key={index} className="marquee-item">
-            <img
-              src={`/Logos/${img}`}
-              alt={img.split(".")[0]}
-              className="w-48 md:w-48 lg:w-64"
-            />
-          </div>
-        ))}
-      </div>
-    </div>
-  );
-};
-
-const Home = () => {
-  const { products } = useProducts();
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
-  const firstFourProducts = products.slice(0, 4);
-
-  return (
     <>
-   
-
       <section className="bg-gradient-to-r from-[#EDF2F4] to-[#E0E7FF] flex items-center justify-center py-16">
-           
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center space-y-8 md:space-y-0 p-6 md:p-8 rounded-md">
-    
           <div className="md:w-1/2 w-full text-center md:text-left space-y-6">
             <h2 className="text-sm font-semibold text-white bg-[#1842B6] p-2 rounded-full inline-block px-5">
-            BSI Certified ISO 9001:2015 Company
+              BSI Certified ISO 9001:2015 Company
             </h2>
             <h1 className="text-3xl md:text-5xl font-bold text-black leading-tight">
               Precision. Innovation. Excellence.
@@ -136,6 +115,25 @@ const Home = () => {
           </Link>
         </div>
       </section>
+
+      {/* Client Logos Section */}
+      <section className="my-4 px-4 text-center mt-10">
+        <h2 className="text-3xl font-bold mb-8">Our Clients</h2>
+        <div className="relative overflow-hidden py-4">
+          <div className="flex items-center">
+            {logoFiles.map((img, index) => (
+              <div key={index} className="marquee-item">
+                <img
+                  src={`/Logos/${img}`}
+                  alt={img.split(".")[0]}
+                  className="w-48 md:w-48 lg:w-64"
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+      <section class="pt-6 pb-6 px-4 mt-2 bg-black mt-14"><div class="max-w-7xl mx-auto sm:px-6 lg:px-8"><div class="grid grid-cols-2 sm:grid-cols-4 gap-6 text-center text-white"><div><h2 class="text-4xl font-bold">1978</h2><p>Establisment of Jaws Mfg. </p></div><div><h2 class="text-4xl font-bold">46+</h2><p>Years Experience</p></div><div><h2 class="text-4xl font-bold">23+</h2><p>Clients Satisfied</p></div><div><h2 class="text-4xl font-bold">500+</h2><p>Projects Completed</p></div></div></div></section>
     </>
   );
 };

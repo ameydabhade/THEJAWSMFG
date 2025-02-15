@@ -44,7 +44,7 @@ const ProductDetails = () => {
         <img
           src={product.img}
           alt={product.name}
-          className="w-full md:w-1/3 h-64 object-cover rounded-lg shadow-lg"
+          className="w-full md:w-1/3 h-64 object-cover rounded-lg shadow-lg justify-start"
         />
 
         <div className="w-full md:w-2/3">
@@ -52,8 +52,22 @@ const ProductDetails = () => {
             {product.name}
           </h2>
           <p className="text-gray-600 mt-2">{product.description}</p>
+          
           <p className="text-gray-700 mt-4">{product.detailedDescription}</p>
+          
+          <div className="mt-6 flex flex-wrap gap-4">
+            <a href="tel:9158866113">
+              <button className="flex items-center gap-2 px-6 py-3 bg-[#1842B6] text-white rounded-full hover:bg-blue-700 transition-all duration-300">
+                <Phone size={20} /> Call Now
+              </button>
+            </a>
 
+            <a href="https://wa.me/9371002117">
+              <button className="flex items-center gap-2 px-6 py-3 bg-black text-white rounded-full hover:bg-green-600 transition-all duration-300">
+                <MessageCircle size={20} /> Chat on WhatsApp
+              </button>
+            </a>
+          </div>
           {/* Features Section */}
           {product.features && (
             <div className="mt-6">
@@ -83,19 +97,7 @@ const ProductDetails = () => {
           )}
 
           {/* Call and WhatsApp Buttons */}
-          <div className="mt-6 flex flex-wrap gap-4">
-            <a href="tel:9158866113">
-              <button className="flex items-center gap-2 px-6 py-3 bg-[#1842B6] text-white rounded-full hover:bg-blue-700 transition-all duration-300">
-                <Phone size={20} /> Call Now
-              </button>
-            </a>
 
-            <a href="https://wa.me/9371002117">
-              <button className="flex items-center gap-2 px-6 py-3 bg-black text-white rounded-full hover:bg-green-600 transition-all duration-300">
-                <MessageCircle size={20} /> Chat on WhatsApp
-              </button>
-            </a>
-          </div>
         </div>
       </div>
     </main>
