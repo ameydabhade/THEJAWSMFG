@@ -40,13 +40,15 @@ const ProductDetails = () => {
       </Link>
 
       {/* Product Display Section */}
+ 
       <div className="max-w-6xl mx-auto p-4 flex flex-col md:flex-row items-center justify-between mt-8 gap-6">
+      <div className="w-full md:w-1/3 h-64 "> 
         <img
           src={product.img}
           alt={product.name}
-          className="w-full md:w-1/3 h-64 object-cover rounded-lg shadow-lg justify-start"
+          className=" rounded-lg shadow-lg"
         />
-
+</div>
         <div className="w-full md:w-2/3">
           <h2 className="text-3xl font-semibold text-[#1842B6] mt-4">
             {product.name}

@@ -15,7 +15,7 @@ const ProductCard = ({ product }) => (
       <h3 className="text-xl font-semibold text-[#1842B6]">{product.name}</h3>
       <p className="text-gray-600 mt-2 flex-grow">{product.description}</p>
       <div className="mt-auto">
-        <button className="w-full px-4 py-2 bg-[#1842B6] text-white rounded-md hover:bg-[#0f3196] transition duration-200 cursor-pointer">
+        <button className="w-full px-4 py-2 bg-[#1842B6]  text-white rounded-md hover:bg-[#0f3196] transition duration-200 cursor-pointer">
           View Details
         </button>
       </div>
@@ -73,7 +73,7 @@ const Home = () => {
               At <strong>Jaws Manufacturing Company</strong>, we specialize in high-performance accessories for the machine tool industry. From precision <strong>Power Chucks</strong> and <strong>Hydraulic Cylinders</strong> to custom-engineered <strong>Soft & Hard Jaws</strong>, our solutions enhance productivity and reliability.
             </p>
             <Link to="/products">
-              <button className="px-8 py-3 bg-[#1842B6] text-white rounded-full hover:bg-blue-700 transition-all duration-300">
+              <button className="px-8 py-3 bg-[#1842B6] cursor-pointer  text-white rounded-full hover:bg-blue-700 transition-all duration-300">
                 Explore Our Products
               </button>
             </Link>
@@ -95,7 +95,7 @@ const Home = () => {
             With <strong>46+ years</strong> of expertise, we are a trusted manufacturer of high-quality workholding solutions. Our precision-engineered chucks, jaws, and hydraulic components are designed to elevate your machining efficiency and precision.
           </p>
           <Link to="/service">
-            <button className="px-6 py-3 bg-[#1842B6] text-white rounded-full mb-6 md:mb-8">Get in Touch</button>
+            <button className="px-6 py-3 bg-[#1842B6] cursor-pointer text-white rounded-full mb-6 md:mb-8">Get in Touch</button>
           </Link>
         </div>
       </section>
@@ -109,7 +109,7 @@ const Home = () => {
         </div>
         <div className="text-right mt-6">
           <Link to="/products">
-            <button className="px-8 py-3 bg-[#1842B6] text-white rounded-lg mr-10 hover:bg-blue-700 transition-all duration-300">
+            <button className="px-8 py-3 bg-[#1842B6] cursor-pointer text-white rounded-lg mr-10 hover:bg-blue-700 transition-all duration-300">
               View More
             </button>
           </Link>
