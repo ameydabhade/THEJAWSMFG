@@ -69,7 +69,7 @@ export const ProductProvider = ({ children }) => {
     {
       "id": 4,
       "name": "Hard Jaws",
-      "description": "Hard Jaws are designed for heavy-duty machining and high-strength clamping, ensuring superior grip and durability in demanding applications.",
+      "description": "Hard Jaws provide strong, durable clamping for heavy-duty machining and high-strength applications.",
       "img": "/hardJaws.jpg",
       "detailedDescription": "Hard Jaws share certain characteristics of soft jaws. They are made of case-hardened steel - EN353 and hardened up to 50-55 HRC. They are usually used for first-operation roughing, where gripping is a more important criterion than concentricity. The ground gripping surface of the jaw provides a secure true grip.",
       "features": [
@@ -109,7 +109,7 @@ export const ProductProvider = ({ children }) => {
     {
       "id": 6,
       "name": "Jaws Eccentric Compensating Chuck",
-      "description": "Chucks designed to compensate for eccentric workpieces for optimal grip.",
+      "description": "Chucks designed for eccentric workpieces, ensuring optimal grip.",
       "img": "/eccentricCompensatingChuck.jpg",
       "detailedDescription": "JAWS Eccentric Compensating Chucks have been designed to hold workpieces in between centers with eccentricity or irregularity. The compensating chuck provides a total solution to any chucking problem requiring jaw movement to match the eccentricity or irregularity of the workpiece. These chucks are actuated either by Pneumatic Cylinders or Hydraulic Cylinders and are ideal for irregular-shaped workpieces. JPCE is offered with centering inserts and spring-loaded or solid centers.",
       "features": [
