@@ -34,10 +34,10 @@ const Header = () => {
 
         {isMobileMenuOpen && (
           <div className="md:hidden  shadow-lg transition-all py-4 rounded-lg">
-            <Link to="/" className="block px-4 py-2 text-black hover:bg-gray-200 transition duration-300">Home</Link> {/* Change 'a' to 'Link' */}
-            <Link to="/solutions" className="block px-4 py-2 text-black hover:bg-gray-200 transition duration-300">Solutions</Link> {/* Change 'a' to 'Link' */}
+            <Link to="/" className="block px-4 py-2 text-black hover:bg-blue-300 transition duration-300">Home</Link> {/* Change 'a' to 'Link' */}
+            <Link to="/solutions" className="block px-4 py-2 text-black hover:bg-blue-300 transition duration-300">Solutions</Link> {/* Change 'a' to 'Link' */}
     
-            <Link to="/products" className="block px-4 py-2 text-white hover:bg-gray-200 transition duration-300">Products</Link> {/* Change 'a' to 'Link' */}
+            <Link to="/products" className="block px-4 py-2 text-white hover:bg-blue-300 transition duration-300">Products</Link> {/* Change 'a' to 'Link' */}
           </div>
         )}
       </div>
