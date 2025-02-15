@@ -13,8 +13,8 @@ const ProductCard = ({ product }) => (
         />
       </div>
       <h3 className="text-xl font-semibold text-[#1842B6]">{product.name}</h3>
-      <p className="text-gray-600 mt-2 flex-grow">{product.description}</p>
-      <div className="mt-auto">
+      <p className="text-gray-600 mt-2  flex-grow">{product.description}</p>
+      <div className="mt-2">
         <button className="w-full px-4 py-2 bg-[#1842B6] text-white rounded-md hover:bg-[#0f3196] transition duration-200 cursor-pointer">
           View Details
         </button>
