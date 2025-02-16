@@ -76,7 +76,7 @@ const Footer = () => {
           <div>
             <div className="mb-4 flex items-center space-x-2">
               <img
-                src="https://www.jawsindia.com/images/logo.png"
+                src="/logo.png"
                 alt="Logo"
                 className="h-10"
               />

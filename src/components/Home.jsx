@@ -111,7 +111,7 @@ const Home = () => {
             We Never Let Off...
           </h1>
           <p className="text-lg text-gray-600 mb-6">
-            With <strong>46+ years</strong> of expertise, we are a trusted
+            With <strong>50+ years</strong> of expertise, we are a trusted
             manufacturer of high-quality workholding solutions. Our
             precision-engineered chucks, jaws, and hydraulic components are
             designed to elevate your machining efficiency and precision.
@@ -168,7 +168,7 @@ const Home = () => {
               <p>Establishment of Jaws Mfg.</p>
             </div>
             <div>
-              <h2 className="text-4xl font-bold">46+</h2>
+              <h2 className="text-4xl font-bold">50+</h2>
               <p>Years Experience</p>
             </div>
             <div>
